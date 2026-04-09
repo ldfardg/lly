@@ -114,9 +114,18 @@ export default function Home() {
                     <span className="text-xs font-medium text-gray-500 bg-gray-100 px-3 py-1 rounded-full">
                       {course.category}
                     </span>
-                    <button className="text-blue-600 hover:text-blue-800 font-medium text-sm transition-colors">
-                      查看详情 →
-                    </button>
+                    {course.name === '数据分析技术' ? (
+                      <a 
+                        href="/courses/data-analysis" 
+                        className="text-blue-600 hover:text-blue-800 font-medium text-sm transition-colors"
+                      >
+                        查看详情 →
+                      </a>
+                    ) : (
+                      <button className="text-blue-600 hover:text-blue-800 font-medium text-sm transition-colors">
+                        查看详情 →
+                      </button>
+                    )}
                   </div>
                 </div>
               </div>

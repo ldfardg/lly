@@ -121,6 +121,34 @@ export default function Home() {
                       >
                         查看详情 →
                       </a>
+                    ) : course.name === 'Python基础' ? (
+                      <a 
+                        href="/courses/python" 
+                        className="text-blue-600 hover:text-blue-800 font-medium text-sm transition-colors"
+                      >
+                        查看详情 →
+                      </a>
+                    ) : course.name === '数据采集与处理' ? (
+                      <a 
+                        href="/courses/data-collection" 
+                        className="text-blue-600 hover:text-blue-800 font-medium text-sm transition-colors"
+                      >
+                        查看详情 →
+                      </a>
+                    ) : course.name === '供应链数据分析' ? (
+                      <a 
+                        href="/courses/supply-chain" 
+                        className="text-blue-600 hover:text-blue-800 font-medium text-sm transition-colors"
+                      >
+                        查看详情 →
+                      </a>
+                    ) : course.name === '数据库原理与应用' ? (
+                      <a 
+                        href="/courses/database" 
+                        className="text-blue-600 hover:text-blue-800 font-medium text-sm transition-colors"
+                      >
+                        查看详情 →
+                      </a>
                     ) : (
                       <button className="text-blue-600 hover:text-blue-800 font-medium text-sm transition-colors">
                         查看详情 →
